@@ -1,0 +1,40 @@
+Danielle Gray
+IGME 202.02
+
+I created the classic version of asteroids.
+
+The ship accelerates and deccelerates. It rotates, and
+goes forward in the direction it's rotated in when the
+up arrow key is pressed.
+
+Asteroids are randomly generated with a timer (which 
+gets smaller as the game goes on) on the opposite side
+of the screen that the ship is. The asteroids array is a 
+reused array made of the asteroids class which has a 
+PShape array for two different kinds of asteroids (also 
+randomly chosen which kind). The asteroids spin and go at 
+a constant randomized velocity and become inactive once 
+they leave the screen or are hit with a bullet. The asteroids 
+break several times until they get to a certain size, and 
+then they become inactive the next time they're hit.
+
+Bullets are fired from the direction the ship is facing.
+You can only fire a bullet once the timer gets to 0, which 
+counts down with each frame. The bullets become inactive
+once they hit an asteroid, or if it goes off screen, 
+to be reused again.
+
+Ship-asteroid collisions work, and the game is over if an
+asteroid hits the ship.
+
+Bullet-asteroid collisions work as well, and the bullet
+becomes inactive and the asteroid either breaks apart 
+or becomes inactive.
+
+Challenges - The ship does do the classic drifting that
+the original asteroids game does. There is also a "Game Over"
+screen that displays your last 5 scores. Your current score
+displays at the top of the screen. The ship also regenerates
+in a random location if you press the down arrow key like
+in the original asteroids (but you might die because it might
+generate you in the location of an asteroid...)
